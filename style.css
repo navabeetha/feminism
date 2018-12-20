@@ -23,39 +23,44 @@ a:active {
 }
 
 
-@media screen and (max-width: 320px) {
-    .body {
-        margin: auto;
-        width: 90%;
+@media screen and (min-width: 320px) {
+    .menu {
+        margin-bottom: 10px;
+    }
+    .c
+    .content {
+        width: 300px;
+    }
+    
+    .para {
+        font-size: 12px;
     }
 }
 
-@media screen and (max-width: 600px) {
-    .body {
-        margin: auto;
-        width: 90%;
+@media screen and (min-width: 600px) {
+    .menu {
+        margin-bottom: 30px;
+    }
+    .content {
+        width: 500px;
+    }
+    .para {
+        
+        font-size: 12px;
     }
 }
 
-@media screen and (max-width: 1024px) {
-    .body {
-        margin: auto;
+@media screen and (min-width: 1024px) {
+    .menu {
+        margin-bottom: 30px;
     }
-}
-
-.header-back {
-    display: block;
-    width: 0 auto;
-    background-color: none;
+    .content {
+        width: 600px;
+    }
 }
 
 .header {
     margin: auto;
-}
-
-.center {
-    margin: auto;
-    /* background-color: red; */
 }
 
 .title {
@@ -68,11 +73,9 @@ a:active {
 
 .menu {
     display: grid;
-    height: 20px;
     grid-template-columns: repeat(4, 1fr);
     grid-auto-rows: 20px;
     justify-items: stretch;
-    margin-bottom: 50px;
 }
 
 .menu-item {
@@ -92,8 +95,7 @@ a:active {
     padding-bottom: 10px;
 }
 
-.body {
-    width: 600px;
+.content {
     padding-top: 30px;
     margin: 0 auto;
 }
@@ -133,6 +135,7 @@ a:active {
 }
 
 #langbut {
+    display: none;
     /* Hidden by default */
     position: fixed;
     /* Fixed/sticky position */
@@ -163,6 +166,7 @@ a:active {
 #langbut:hover {
     background-color: #555;
     /* Add a dark-grey background on hover */
+    color: white;
 }
 
 .splash {
@@ -202,7 +206,7 @@ a:active {
     margin-bottom: 15px;
     font-family: 'Merriweather Sans', sans-serif;
     font-size: 20px;
-    font-weight: 400;
+    font-weight: 800;
     margin-top: 30px;
 }
 
@@ -210,21 +214,32 @@ a:active {
     margin: auto;
     padding-left: 30px;
     padding-right: 30px;
-    text-align: center;
-    margin-bottom: 30px;
+    text-align: justify;
+    margin-bottom: 20px;
 
     font-family: 'Merriweather', serif;
-    font-size: 14px;
+   /* font-size: 18px; */
     font-weight: 400;
 }
 
-img {
-    max-width: 100%;
-    max-height: 100%;
+.scrolling-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
 }
 
-.full-image {
-    margin: auto;
-    width: 600px;
-    height: 600px;
+.card {
+    flex: 0 0 auto;
+  }
+
+.image {
+    padding-left: 15px;
+    padding-right: 15px;
+    display: block;
+    max-height: 300px;
+    width: auto;
+}
+
+.single {
+    width: 100%;
 }
