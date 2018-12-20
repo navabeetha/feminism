@@ -45,7 +45,6 @@ a:active {
         width: 500px;
     }
     .para {
-        
         font-size: 12px;
     }
 }
@@ -56,6 +55,21 @@ a:active {
     }
     .content {
         width: 600px;
+    }
+    .para {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 1920px) {
+    .menu {
+        margin-bottom: 60px;
+    }
+    .content {
+        width: 900px;
+    }
+    .para {
+        font-size: 20px;
     }
 }
 
